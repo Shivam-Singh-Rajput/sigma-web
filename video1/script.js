@@ -1,1 +1,1 @@
-alert("Welcome to Sigma Webdevelopment course")
+alert("Welcome")
