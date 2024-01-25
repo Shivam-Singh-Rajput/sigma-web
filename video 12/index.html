@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        /* Element Selector */
+        div {
+            /* color: violet;
+            background-color: black; */
+        }
+
+        /* Class Selector */
+        .Shiv {
+            color: red;
+            background-color: purple;
+        }
+
+        /* Id selector */
+        #green {
+            background-color: blue;
+        }
+
+        /* Child selector */
+        div>p {
+            color: aliceblue;
+            background-color: black;
+        }
+
+        /* Decendent Selector-->It is show that any tag should be come inside of selected tag */
+        div p {
+            color: green;
+            background-color: pink;
+        }
+
+        /* Universal Selector--> It is use for whole the tag which is write in the form of code */
+        * {
+            /* In dono element ka means hai ki jitne me para or other element honge sare ek sath chipak jayenge distance cover kr k */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+        a:visited{
+            color: black;
+        }
+
+        a:link {
+            color: red;
+        }
+
+        a:active {
+            /* active means when we are going to click than changes */
+            background-color: blue;
+        }
+        a:hover{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>Hey buddy let's go to play</p>
+    </div>
+    <div id="green">
+        How is it
+        <article>
+            <p class="Shiv">What's up guies</p>
+        </article>
+    </div>
+    <a href="https://google.com">Go to Google</a>
+    <a href="https://facebook.com">Go to Facebook</a>
+</body>
+
+</html>
