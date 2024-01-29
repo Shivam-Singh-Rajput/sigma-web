@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS properties</title>
+    <style>
+        .box{
+            background-color: aqua;
+        }
+        .box1{
+            color: yellow;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid blue;
+            height: 200px;
+            /* box-sizing: border-box padding aur height dono ko include kr k count karta hai  */
+            box-sizing: border-box;
+        }
+        /* Margin Collapse
+        it means all tose given margin which one is maximum it will be executed when the given margin is same then as it will take a one margin not a included both. */
+        .box2{
+            color: red;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid black;
+            height: 200px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">This is a box</div>
+    <div class="box box2">This is another box</div>
+</body>
+</html>
