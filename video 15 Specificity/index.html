@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        /* The specificity of this selector is 10 */
+     .cread{
+        color: aquamarine;
+    }
+
+    /* The specificity of this selector is 10 */
+     .purple{
+        color: purple;
+     }
+
+     /* Here the specificities of h1 is 1 and class is 10 then 1+10=11*/
+     h1.yellow{
+        color: blue;
+     }
+        /* The specificity of this selector is 10 */
+     .yellow{
+        color: yellow;
+     }
+        /* This is an example of attribute selector.The specificity of this selector is 10 */
+     [data-x=a]{
+        color: azure;
+     }
+     /* Here the specificity of selector a=1,class shivclass=10 another class rohit-class=10,href which is depend on selector[data-x]=10 and last pseudo class=10 so we have 1+10+10+10+10 = 41*/
+     a.shivclass.rohit-class[href]:hover{
+        color: burlywood;
+     }
+    </style>
+</head>
+<body>
+    <!-- Notes
+    To calculate specificity, assign a value to each part of the selector:
+
+Universal Selector: 0
+Element selectors and pseudo-elements: 1
+Class selectors, attribute selectors, and pseudo-classes: 10
+ID selectors: 100
+Inline styles: 1000
+Importance: !important: 10000 it is most specificity value it can't be override.
+Then, add up the values of all the parts in the selector. -->
+    <div>
+        <h1 class="cread purple yellow" data-x="a">I am a learner.What is your proffesion</h1>
+    </div>
+</body>
+</html>
