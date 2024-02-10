@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow</title>
+    <style>
+        .shiv{
+            border: 2px solid blue;
+            width: 80vw;
+            height: 20vh;
+/* Overflow condition occur when we write a text so many and this much text is not adjustable */
+            overflow: auto;
+ /* The property white-space: nowrap is use for showing all text in a horizontaly single line when we use this property it does not allow to text fall bottom */
+            /* white-space: nowrap; */
+            /* overflow: clip; 
+            It is similar to text-overflow: hidden property and it is remove programaticaly scroll bar*/
+            overflow-x: hidden;
+            overflow-y: scroll;
+    /* Given above these two property we can write in single line
+    using overflow: hidden scroll/auto here hidden = x and scrol or auto = y */
+            /* text-overflow: ellipsis; */
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <p class="shiv">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis sit dolorum incidunt velit culpa dolores eligendi iusto voluptatibus harum ut tempore doloremque illo id esse animi minus accusantium, possimus assumenda corrupti deleniti eveniet. Est suscipit temporibus, recusandae optio officia odit sapiente quos impedit voluptas ab accusantium pariatur nihil, cumque ducimus!</p>
+</div>
+</body>
+</html>
