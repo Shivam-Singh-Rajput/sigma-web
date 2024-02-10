@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .Shiv div{
+            border: 2px solid black;
+            width: 80vw;
+            height: 150px;
+            padding: 2px;
+            margin: 5px;
+        }
+
+        .raj1{
+            background-color: blue;
+            /* Sticky position is use for stick(chipkna) inside 1 element of all element when we use this position then we set the top or bottom position*/
+            position: sticky;
+            top: 0px;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 111px;
+        }
+        .raj2{
+            background-color: violet;
+        }
+        .raj3{
+            background-color: tomato;
+        }
+        .raj4{
+            background-color: turquoise;
+        }
+        .raj5{
+            background-color: springgreen;
+        }
+        .box {
+            border: 2px solid black;
+            width: 80vw;
+            height: 50px;
+            padding: 2px;
+            margin: 5px;
+            border-color: red;
+        }
+
+        .Parrent {
+            border: 3px solid purple;
+            padding: 20px;
+            margin: 10px;
+            height: 200px;
+            position: relative;
+        }
+
+        .box1 {
+            background-color: green;
+            /* position: absolute ka use karne se koi v element html k relative chalta hai jb tk ki uske parrent me
+   koi v position: relative atribute na paya jaye bs vo static na ho tb vah apne parrent k according nereast positioned ancestor(purvaj) k according move karta hai*/
+   /* Here the some exception transform, filter, or perspective properties can also make an element appear as positioned that means when we will use these properties then it is also relative to his parrant not html/body */
+            position: absolute;
+            top: 0px;
+            left: 20px
+        }
+
+        .box2 {
+            top: 25px;
+            left: 20px;
+            background-color: aqua;
+            /* We use the property of position: relative when we set the position top or 
+    bottom it is basically use for top to bottom positioning with the help of relative
+    we can move this particular box in which we implement this position */
+            /* position: relative; */
+        }
+
+        .box3 {
+            background-color: blanchedalmond;
+            /* Whenever we use z-index(gindex) then we will use the property of position:relative;
+    or any property at the place of static position.
+    without using this property we can not use z-index; and z-index use for showing the element which is hide in backside */
+            /* position: relative; */
+            z-index: 1;
+        }
+
+        .box4 {
+            background-color: orange;
+            /* position: fixed; */
+            top: 150px;
+            left: 8vw;
+            padding: 0;
+            margin: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="Parrent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+    <div class="Shiv">
+        <div class="Raj raj1"></div>
+        <div class="Raj raj2"></div>
+        <div class="Raj raj3"></div>
+        <div class="Raj raj4"></div>
+        <div class="Raj raj5"></div>
+    </div5
+</body5
+</html5
