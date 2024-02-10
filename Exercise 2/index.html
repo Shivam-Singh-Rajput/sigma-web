@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 900;
+            font-style: italic;
+        }
+        /* The concept of first-child is apply when we need to change with the help of css inside of div.When we have to change para first is another color or other types of property and para second to another type of color or other types of property. It is work on a concept of parrent and child base div is parant and inside of div all tag his child */
+        div p:first-child{
+            color: red;
+            background-color: yellow;
+        }
+        p{
+            color: white;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem culpa magnam laboriosam fugit quaerat voluptate blanditiis laudantium dolorum atque! Inventore.</p>
+        <p>This is another para</p>
+            <p>I am a developer</p>
+        <p>I want to become a next william Gates</p>
+        <p>What's your openion about this</p>
+    </div>
+</body>
+</html>
