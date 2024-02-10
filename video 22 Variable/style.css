@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* Here we use Varriable :root property which is use for give a  color or any style same in so many tag that's why we use variable property because with the help of variable we can give a numbers of style in a single way.
+CSS variable can hold also a another types of property like string,background url,numbers and etc */
+:root{
+    --color: rgb(255, 0, 174);
+    --seccolor: green;
+}
+div ul{
+    background-color: var(--color);
+}
+ul :first-child{
+    color: var(--seccolor);
+}
+ul{
+    display: flex;
+}
+p{
+    background-color: var(--seccolor);
+}
+ul li{
+    list-style: none;
+    font-style: oblique;
+    font-size: 20px;
+    width: 80px;
+    text-transform: uppercase;
+    
+}
