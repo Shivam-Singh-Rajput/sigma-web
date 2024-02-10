@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+/* @media queries is specially use for looking website good in any device even it might
+be any divice like mobile phone or laptop or in any pc it is also use for breakdown*/
+        body{
+            background-color: black;
+        }
+        @media screen and (orientation: portrait) {
+        /* In this media queries two types of orientation one is landscape and 
+        another one is potrait here the means of landscape that the size of width
+        is grater than the size of height of elemint 
+        and The means of 'potrait' that the size of height is greater than the size
+        of width of element */
+        }
+        @media only screen and (max-width: 520px){
+    /* @media not|only screen and(expression) {
+        here the two types of expression first is min-width and second max-width
+        CSS code
+    } */
+            body{
+                background-color: blue;
+            }
+            .shiv{
+    /* with the help of this properties we can set the changes of element horizontal
+    to vertical */
+                flex-direction: column;
+            }
+        }
+        .shiv{
+            display: flex;
+        }
+       .box{
+        width: 350px;
+        height: 350px;
+        background-color: white;
+        margin: 3px;
+        padding: 3px;
+       }
+    </style>
+</head>
+<body>
+        <div class="shiv">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+</body>
+</html>
