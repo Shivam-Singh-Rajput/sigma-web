@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+    /* .box:first-child{
+       background-color: red;
+    } */
+
+    .box::first-line{
+        background-color: yellow
+    }
+
+    .SH *{
+        border: 2px solid black;
+    }
+ 
+    /* This is a attribute selector when this selector use in which property then the changes occur in those particular line in this attribute i am also use the
+    group selector */
+    p, a, .box, [data-color="primary"]{
+       margin-top: 25px;
+       padding-top: 25px;
+       border: 2px solid black;
+    }
+
+    /* It is a child selector with in this selector we can set the selector is even 
+    or odd derect after this selector any changen will be hppen at the place of even/odd */
+    .box:nth-child(even){
+        background-color: blue;
+    }
+    
+    /* "before" and "after"--> This is the pseudo element not selector it is insert 
+    dynamecilly by CSS.We will write anything in before element it is print
+    before all the main content
+    after-->We will write anything in after element it is print
+    after all the main content */
+    .SH:before{
+       content:"I am your boss"
+    }
+
+    .SH:after{
+       content: "Hey i am a web developer"
+    }
+
+ /* selection is such type of selector which is use for change the property when we
+ select element.when we will not take a any particular attribute then it will 
+ apply on all the element which is write  */
+    .box:first-child::selection{
+      background-color: black;
+      color: aqua;
+    }
+
+    /* This selector is use for set a property of letter */
+    .box::first-letter{
+      color: purple;
+      background-color: steelblue;
+      font-size: 25px;
+    }
+
+/* This "input" selector use for set a property of input */
+input::placeholder{
+   color: blue;
+   background-color: aquamarine;
+}
+
+.box:first-child:hover{
+   background-color: black;
+}
+    </style>
+</head>
+<body>
+   <div class="SH">
+       <div data-color="primary" class="box">It is first div</div>
+       <div class= "box">It is a second div</div>
+    <div class= "box">It is a third div</div>
+    <input type="search here" placeholder="You can Search anything">
+   </div> 
+</body>
+</html>
