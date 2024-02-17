@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Property</title>
+    <style>
+        .container{
+            /* In 'Grid' property we can define that how many row and how many column*/
+            border: 2px solid peru;
+            display: grid;
+            grid-template-columns: 120px 110px; /* It is define how many column 
+            and its size you want after define number of column this property is 
+            automatic taking the first value in first column and second value in
+            second column */
+            grid-template-rows: 110px 110px 110px;
+        }
+
+        .shiv{
+            border: 2px solid black;
+            /* width: 30px;
+            height: 30px; */
+        }
+
+/* 'grid-row:1/2' and 'grid-column:1/2' property is define element order. 
+we can change the ordering of element with this property here 1 is define row number
+and 2 is define how many row take by single element*/
+        .item-4{
+            grid-row: 1/2;
+            grid-column: 1/2; /* here 1 is define the number of column and 2 is define
+            2 column space take by element */ 
+        }
+        .item-2{
+            /* grid-row: 1/2; */
+            /* we can do same thing other way */
+            grid-row-start: 1;
+            grid-row-end: 2;
+
+            /* grid-column: 1/2; */
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="shiv item-1">1</div>
+        <div class="shiv item-2">2</div>
+        <div class="shiv">3</div>
+        <div class="shiv item-4">4</div>
+        <div class="shiv">5</div>
+    </div>
+</body>
+</html>
