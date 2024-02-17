@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS flex Property</title>
+    <style>
+       .container{
+/* There is no 'justify-items' in flex box that means in flex box we do not use of
+justify-items property */
+        display: flex;
+        border: 2px solid black;
+        height: 80vh;
+    
+/* In the "justify-content;" we can use so many property for adjustment the
+content according to need like 'flex-start','flex-end','left', 'right'
+'flex-center' etc. */
+        justify-content:center;
+
+/* Here the align property is use for set a items vertically in middle of border 
+it is use for when we have only one line */
+        align-items: center;
+/* The property of "flex-direction:" is use for set the element in row,column,row-reverse
+column-reverse wise */
+        /* flex-direction: column; */
+
+  /* flex-wrap property is basicaly use for conlrol overflow problem it is wrap the 
+  the content which is overflow from the box */
+        flex-wrap: wrap;
+
+/* "align-content" property is use for set a given element in centre,start and end according to need.We can set any side 
+ with all element which is wrap and it is use for when we have multiple line */
+       /* align-content: start; */
+
+       /* gap property sare element k bich me gap dene k liye use kiya jata hai */
+       /* gap: 20px;
+       column-gap: 20px;
+       row-gap: 20px; */
+/* we can also give a row and column gap in one line */
+       gap: 20px 25px; /*--> first 20px is row gap and second 25px is coloumn gap*/
+       }
+
+       .box{
+        border: 4px solid blue;
+        width: 30px;
+        height: 30px;
+        margin: 2px;
+        padding: 3px;
+        background-color: yellow;
+    }
+        
+    /* box properties */
+        /* In this property which one order is less thats come first and which one 
+        order is greater then they come last. By default all element order is 0 */
+       .order-1{
+        order: 1;
+       }
+       .order-2{
+        order: 2;
+       }
+
+/* "flex-grow" property is for change the size it grow a double of his size */
+       .box1{
+        flex-grow: 2;
+        /* flex-shrink: 2;--> iske use karne se element apne size k double tk shrink(chipak)
+        jata hai */
+       }
+
+       .box1{
+        align-self: flex-end; /*-->It is set the element from the row whare you want
+        to set any particular element with the help of "align-self" property */
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box order-1">5</div>
+        <div class="box order-2">S</div>
+        <div class="box order-3">M</div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>        
+    </div>
+
+</body>
+</html>
