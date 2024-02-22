@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformation</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            height: 100vh;
+            .box{
+                border: 2px solid orange;
+                background-color: whitesmoke;
+                width: 40px;
+                height: 35px;
+        /* basocally  we use transformation when we create a nav bar their are many
+        types of transformation given below */ /* Hre we can rotate from three side
+        one is x axis and second y-axis and third is z-axis */ 
+                transform: rotate(30deg); 
+                /* transform: rotatex(0.5turn); */
+                /* transform: scale(1.5); */ /*scale is use for increase and decrease
+                the size we can transform the size x, y and z-axis */
+                /* transform: scale3d(1, 2, 5); */
+    /* skew is rotate only horizontaly and vertically that means x-axis and y-axis */
+                /* transform: skewY(30deg); */
+                 /* translate property maintain a distance of his width of x or y-axis*/
+                 /* transform: translateY(30px); */
+    /* when we use the multiple 'transform property' then we use the space between
+    the transform property */
+                /* transform: translateX(30%) rotate(45deg) skewX(20deg); */
+        /* "transform-origin" property ek fix point pe move karane k liye lagai jati hai*/
+                transform-origin: -0% -0%;
+               justify-content: center;
+               align-items: center;
+               display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box</div>
+    </div>
+</body>
+</html>
