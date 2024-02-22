@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            background-color: aqua;
+            height: 60vh;
+            width: 70vw;
+        }
+
+        /*                      Note
+        Transition property is use for enter a one function to another function 'smoothly'
+        in other word when we use the 'transition' property it is enter one to another
+        slowely slowely */
+
+            .shiv{
+                border: 2px solid purple;
+                width: 50px;
+                height: 25px;
+                background-color: black;
+/* If we want to use the all the property of 'transition' in one line then we use this type of transition */
+            transition: all 3s ease-in-out 1s;
+    /* 'transition' property is four types */
+                /* transition-property: transform background-color;
+                transition-duration: 4s;
+                transition-timing-function: cubic-bezier(0.42, 0, 0, 1.15);
+                transition-delay: 1s; */
+            }
+
+        .translate{
+            transform: translateX(10vw) translateY(10vh) scale(2);
+            background-color: blue;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="shiv translate"></div>
+    </div>
+</body>
+</html>
