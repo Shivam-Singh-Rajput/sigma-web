@@ -1,0 +1,55 @@
+:root{
+    --color: blue;
+    --seccolor: black;
+    --shivcolor: yellow;
+    --luckycolor: green;
+}
+*{
+    margin: 1px;
+    padding: 0;
+}
+.shiv{
+    border: 3px solid black;
+    width: 50vw;
+    height: 50px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+.Ram{
+    /* " flex" property is use for aurrange the element in same line thet means it is
+    not faldown element and it is also use for using the 'flex property' flex 
+    property is the function of css3 version */
+    display: flex;
+    color: var(--color);
+    margin: 4px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+.box{
+    border: 2px solid yellow;
+    width: 40px;
+    height: 40px;
+    background-color: var(--seccolor);
+    margin: 2px;
+    padding: 0;
+}
+.box1{
+    border-radius: 5px;
+    background-color: var(--color);
+}
+.box2{
+    background-color: var(--seccolor);
+    border-radius: 50%;
+}
+.box3{
+    background-color: var(--shivcolor);
+    border-radius: 30%;
+}
+.box4{
+    background-color: var(--luckycolor);
+    border-radius: 20%;
+}
+
+.box1 a{
+    color: yellow;
+}
