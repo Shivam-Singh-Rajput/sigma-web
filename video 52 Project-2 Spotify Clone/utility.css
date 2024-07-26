@@ -1,0 +1,68 @@
+.border {
+    border: 2px solid #121212;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.bg-black {
+    background-color: black;
+    color: rgb(180, 180, 180);
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.bg-gray {
+    background-color: #121212;
+}
+
+.rounded {
+    border-radius: 11px;
+}
+
+.m1 {
+    margin: 5px;
+}
+
+.p1 {
+    padding: 25px;
+}
+
+/* Set the scrollbar width and height */
+::-webkit-scrollbar {
+    width: 10px;
+    /* Width of the scrollbar */
+    height: 10px;
+    /* Height of the scrollbar */
+}
+
+/* Track (the background of the scrollbar) */
+::-webkit-scrollbar-track {
+    background: #333;
+    /* Dark background color */
+}
+
+/* Handle (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+    background: #666;
+    /* Darker color for the handle */
+    border-radius: 5px;
+    /* Rounded corners for the handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #999;
+    /* Lighter color on hover */
+}
