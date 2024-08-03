@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+
+/* It is defin that after which layer we want to add the particular class */
+@layer components {
+  .btn{
+    @apply my-8 relative flex mx-auto bg-blue-800 text-white rounded-md hover:bg-blue-700 active:bg-blue-950
+  }
+}
+@tailwind utilities;
