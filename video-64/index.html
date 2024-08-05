@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft – Cloud, Computers, Apps & Gaming</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container max-w-full">
+        <div class="nav flex w-[90vw] justify-evenly items-center p-4">
+            <div class="flex justify-center items-center md:order-2">
+                <div class="hameburger inline-block cursor-pointer p-4 md:hidden">
+                    <div class="line h-0.5 w-4 my-1 bg-black"></div>
+                    <div class="line h-0.5 w-4 my-1 bg-black"></div>
+                    <div class="line h-0.5 w-4 my-1 bg-black"></div>
+                </div>
+                <div class="searchBar cursor-pointer md:hidden"><img class="rotate-60" src="Assets/search.svg" alt=""></div>
+            </div>
+
+            <div class="logo text-center flex gap-4 md:order-1">
+                <div class="w-32 mt-[-2px] relative"><img src="Assets/Microsoft.png" alt=""></div>
+
+                <div class="features hidden md:flex gap-4 cursor-pointer ">
+                    <div class="fitem hover:underline">Microsoft 365</div>
+                    <div class="fitem hover:underline">Teams</div>
+                    <div class="fitem hover:underline">Copilot</div>
+                    <div class="fitem hover:underline">Windows</div>
+                    <div class="fitem hover:underline">Surface</div>
+                    <div class="fitem hover:underline">Xbox</div>
+                    <div class="fitem hover:underline">Support</div>
+                </div>
+            </div>
+            
+            <div class="addCart text-center md:order-3 flex gap-4 cursor-pointer">
+                <div class="searchBar hidden md:block"><img class="my-1.5 rotate-90" src="Assets/search.svg" alt=""></div>
+                <div>
+                    <img class="m-1.5" src="Assets/cart.svg" alt="">
+                </div>
+                <div>
+                    <img class="w-9" src="Assets/Account.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="slider flex flex-col bg-[#e6e6e6] p-4">
+            <div class="relative w-full">
+                <img class="w-full h-auto relative md:-mt-[15px] object-contain" src="Assets/PC.png" alt="Surface Pro">
+                <!-- Content inside image for medium and larger screens -->
+                <div
+                    class="hidden md:flex md:mt-2 w-80 my-16 md:h-56 absolute inset-0 flex-col items-start justify-center py-32 px-3 bg-white bg-opacity-90 text-black rounded-md mx-4 md:mx-14">
+                    <button class="bg-yellow-400 my-2 p-[2px] font-bold text-black">New</button>
+                    <h1 class="text-2xl font-bold">Meet Surface Pro</h1>
+                    <p>This laptop's unrivalled flexibility and AI features like Recall and Cocreator, enable you to do
+                        more
+                        than you ever imagined.</p>
+                    <button class="bg-blue-500 text-white font-bold text-lg my-4 p-2 hover:bg-blue-700">Learn
+                        more</button>
+                </div>
+            </div>
+            <!-- Content below image for small screens -->
+            <div
+                class="flex flex-col items-start justify-center p-6 bg-white text-black rounded-md md:mt-2 md:hidden mx-2">
+                <button class="bg-yellow-400 my-2 p-[2px] font-bold text-black">New</button>
+                <h1 class="text-2xl font-bold">Meet Surface Pro</h1>
+                <p>This laptop's unrivalled flexibility and AI features like Recall and Cocreator, enable you to do more
+                    than you ever imagined.</p>
+                <button class="bg-blue-500 text-white font-bold text-lg my-4 p-2 hover:bg-blue-700">Learn more</button>
+            </div>
+        </div>
+
+        <div class="promo space-y-2 md:flex md:flex-row justify-center items-center">
+            <div class="flex items-center mx-8 space-x-2 underline">
+                <img class="w-8" src="Assets/icon.svg" alt="">
+                <span class="font-medium">Choose your Microsoft 365</span>
+            </div>
+            <div class="promo flex items-center mx-8 space-x-2 underline">
+                <img class="w-8" src="Assets/X-box.svg" alt="">
+                <span class="font-medium">Shop Xbox</span>
+            </div>
+            <div class="promo flex items-center mx-8 space-x-2 underline">
+                <img class="w-8" src="Assets/icon.svg" alt="">
+                <span class="font-medium">Get Windows 11</span>
+            </div>
+            <div class="promo flex items-center mx-8 space-x-2 underline">
+                <img class="w-8" src="Assets/Surface.svg" alt="">
+                <span class="font-medium">Explore Surface devices</span>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
