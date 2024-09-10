@@ -1,0 +1,11 @@
+.First{
+    font-size: 20px;
+    color: yellow;
+    background-color: rgba(10, 1, 1, 0.647);
+    width: 25vw;
+    height:25px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin: auto;
+}
